@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en"> 
+ <head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Document</title> 
+  <link rel="stylesheet" href="css/style.css"> 
+ <style type="text/css" id="dcoder_stylesheet">* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.loader {
+  position: absolute;
+  background-color: white;
+  width: 100%;
+  height: 100vh;
+  z-index: 99;
+  left: -100%;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.loader img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.page1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #B1E0F5;
+  text-align: center;
+}
+
+.page1 h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 20px;
+  color: FFFFFF;
+}
+
+.page1 h1 a {
+  font-size: 15px;
+  color: white;
+  cursor: pointer;
+}
+
+.page2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #F5B1CE;
+  display: none;
+  text-align: center;
+}
+
+.page2 h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 20px;
+  color: #FFFFFF;
+}
+
+.page2 h1 a {
+  font-size: 10px;
+  color: FFFFFF;
+  cursor: pointer;
+}
+
+.page2 h6 {
+  font size: 10px;
+  color: #FF61C6
+}</style></head> 
+ <body> 
+  <div class="loader" id="loader"> 
+   <img src="img/totoro.gif" alt=""> 
+  </div> 
+  <div class="page1" id="page1"> 
+   <h1><p style="color: #FFFFFF">receive the flower to open the gift!<br></p> <a onclick="appearP2()">(੭˘͈ᵕ˘͈)੭𑁍</a> </h1> 
+  </div> 
+  <div class="page2" id="page2"> 
+   <h5><p style="color: #FFFFFF">.· * • ˚ oh wow! a letter for you! ᵔᴗᵔ<br> <a onclick="appearP1()"></a></p></h5> 
+   <h6><p style="color :#F7EEFA">Dear Yulou, <br>
+     This day is very special because an amazing boy was born!<br>
+       Even though I am not there, I want to take <br>
+         a part on this day to make it memorable.<br>
+           This is your first birthday I celebrated with you and<br>
+             I want to make it special. I want to wish you a good<br>
+               life and that you achieve your dreams and goals.<br>
+                 Life is really tough so I want you to be strong.<br>
+                   You're a very very good friend of mine so I hope<br>
+                     that you take care of your self very well<br>
+                       Remember that I will always be at your side if you<br>
+                         need help. I will always support you no matter what<br>
+                           If you have problems, don't hesitate to ask for my help<br>
+                             You are a very hardworking boy so I am sure that you<br>
+                               will achieve your dreams.<br>
+                                 Happy Birthday again Yulou<br>
+                                   I love you.</p></h6>
+                               
+   
+  </div> 
+  <script>
+        function appearP2() { 
+            var loader = document.getElementById('loader');
+            var page1 = document.getElementById('page1');
+            var page2 = document.getElementById('page2');
+            loader.style.left = "0";
+            setTimeout(function() { 
+                loader.style.left = "-100%";
+                page1.style.display = "none";
+                page2.style.display = 'block';
+             }, 1500)
+         }
+
+         function appearP1() { 
+            var loader = document.getElementById('loader');
+            var page1 = document.getElementById('page1');
+            var page2 = document.getElementById('page2');
+            loader.style.left = "0";
+            setTimeout(function() { 
+                loader.style.left = "-100%";
+                page1.style.display = "block";
+                page2.style.display = 'none';
+             }, 1500)
+         }
+
+
+    </script> 
+ 
+</body></html>
